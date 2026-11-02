@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+license: MIT
+message: "If you use this code or the EO-Jev results, please cite the report below."
+title: "EO-Jev: Decision Model for Earth Observation"
+repository-code: "https://github.com/mbzuai-oryx/EO-Jev"
+url: "https://mbzuai-oryx.github.io/EO-Jev/"
+authors:
+  - family-names: Abouelhadid
+    given-names: Mohamed Atef
+    affiliation: "Mohamed bin Zayed University of Artificial Intelligence"
+  - family-names: Abuhani
+    given-names: Diaa Addeen
+    affiliation: "Mohamed bin Zayed University of Artificial Intelligence; Massachusetts Institute of Technology"
+  - family-names: Munir
+    given-names: Muhammad Akhtar
+    affiliation: "Mohamed bin Zayed University of Artificial Intelligence"
+  - family-names: Khan
+    given-names: Fahad Shahbaz
+    affiliation: "Mohamed bin Zayed University of Artificial Intelligence; Linköping University"
+  - family-names: Khan
+    given-names: Salman
+    affiliation: "Mohamed bin Zayed University of Artificial Intelligence; Australian National University"
+keywords: [earth observation, remote sensing, decision model, vision-language model, calibration, LoRA]
+preferred-citation:
+  type: report
+  title: "EO-Jev: Decision Model for Earth Observation"
+  year: 2026
+  authors:
+    - family-names: Abouelhadid
+      given-names: Mohamed Atef
+    - family-names: Abuhani
+      given-names: Diaa Addeen
+    - family-names: Munir
+      given-names: Muhammad Akhtar
+    - family-names: Khan
+      given-names: Fahad Shahbaz
+    - family-names: Khan
+      given-names: Salman

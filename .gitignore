@@ -1,0 +1,14 @@
+# Data, model weights and run outputs live outside the repo (see env.sh); data/ only holds symlinks to them
+data/
+logs/*
+!logs/.gitkeep
+
+# Machine-specific paths (template: env.local.sh.example)
+env.local.sh
+
+# Local tooling and caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+*.log
