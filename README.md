@@ -10,10 +10,11 @@
 [![Project page](https://img.shields.io/badge/Project-Page-1a6599?style=flat-square)](https://mbzuai-oryx.github.io/EO-Jev/)
 [![Demo video](https://img.shields.io/badge/Demo-1%20min-2aa1b3?style=flat-square)](https://mbzuai-oryx.github.io/EO-Jev/#demo)
 [![Paper](https://img.shields.io/badge/arXiv-2611.03371-b31b1b?style=flat-square)](https://arxiv.org/abs/2611.03371)
+[![Model](https://img.shields.io/badge/Model-Hugging%20Face-ffcc4d?style=flat-square)](https://huggingface.co/mx297/EO-Jev)
 [![Cite](https://img.shields.io/badge/Cite-BibTeX-3a8f5c?style=flat-square)](#citation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-5b8bc7?style=flat-square)](LICENSE)
 
-**Website: [mbzuai-oryx.github.io/EO-Jev](https://mbzuai-oryx.github.io/EO-Jev/)** · [Demo video](https://mbzuai-oryx.github.io/EO-Jev/#demo) · [Results explorer](https://mbzuai-oryx.github.io/EO-Jev/#results)
+**Website: [mbzuai-oryx.github.io/EO-Jev](https://mbzuai-oryx.github.io/EO-Jev/)** · [Demo video](https://mbzuai-oryx.github.io/EO-Jev/#demo) · [Results explorer](https://mbzuai-oryx.github.io/EO-Jev/#results) · [Model on Hugging Face](https://huggingface.co/mx297/EO-Jev)
 
 <img src="docs/figures/eo_jev_hook.png" alt="EO-Jev overview: accuracy per capability against d3-flash and the best EO specialist, four real benchmark questions with each model's answer and confidence, and per-capability medians of accuracy, throughput and calibration gains." width="100%">
 
@@ -93,7 +94,23 @@ Data, model weights, run outputs and logs are not in the repository. They live i
 
 ## Usage
 
-Run everything from the repository root.
+**Use the trained model.** EO-Jev is on Hugging Face; the [model card](https://huggingface.co/mx297/EO-Jev) has a complete
+example with an image, typed questions and the probabilities it returns.
+
+```python
+from transformers import AutoModel
+
+model = AutoModel.from_pretrained("mx297/EO-Jev", trust_remote_code=True)
+result = model.system_one(
+    state="Aerial image, about 0.3 m per pixel.",
+    images=["image.png"],
+    questions={"airplanes": {"type": "choice", "instructions": "How many airplanes are in this image?",
+                              "criteria": {"0": None, "1": None, "2": None, "3": None, "more than 3": None}}},
+)
+print(result["answers"]["airplanes"]["probabilities"])
+```
+
+To reproduce the paper, run everything from the repository root.
 
 **Evaluate**
 
