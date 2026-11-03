@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 license: MIT
-message: "If you use this code or the EO-Jev results, please cite the report below."
+message: "If you use this code or the EO-Jev results, please cite the paper below."
 title: "EO-Jev: Decision Model for Earth Observation"
 repository-code: "https://github.com/mbzuai-oryx/EO-Jev"
 url: "https://mbzuai-oryx.github.io/EO-Jev/"
@@ -22,9 +22,12 @@ authors:
     affiliation: "Mohamed bin Zayed University of Artificial Intelligence; Australian National University"
 keywords: [earth observation, remote sensing, decision model, vision-language model, calibration, LoRA]
 preferred-citation:
-  type: report
+  type: article
   title: "EO-Jev: Decision Model for Earth Observation"
+  journal: "arXiv preprint arXiv:2611.03371"
   year: 2026
+  doi: "10.48550/arXiv.2611.03371"
+  url: "https://arxiv.org/abs/2611.03371"
   authors:
     - family-names: Abouelhadid
       given-names: Mohamed Atef

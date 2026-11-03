@@ -9,7 +9,7 @@
 
 [![Project page](https://img.shields.io/badge/Project-Page-1a6599?style=flat-square)](https://mbzuai-oryx.github.io/EO-Jev/)
 [![Demo video](https://img.shields.io/badge/Demo-1%20min-2aa1b3?style=flat-square)](https://mbzuai-oryx.github.io/EO-Jev/#demo)
-[![Paper](https://img.shields.io/badge/Paper-coming%20soon-lightgrey?style=flat-square)](#citation)
+[![Paper](https://img.shields.io/badge/arXiv-2611.03371-b31b1b?style=flat-square)](https://arxiv.org/abs/2611.03371)
 [![Cite](https://img.shields.io/badge/Cite-BibTeX-3a8f5c?style=flat-square)](#citation)
 [![License: MIT](https://img.shields.io/badge/License-MIT-5b8bc7?style=flat-square)](LICENSE)
 
@@ -128,12 +128,12 @@ lines to your cluster's partition, and add `--account` (or any other options you
 ## Citation
 
 ```bibtex
-@misc{abouelhadid2026eojev,
-  title  = {{EO-Jev}: Decision Model for {Earth} Observation},
-  author = {Abouelhadid, Mohamed Atef and Abuhani, Diaa Addeen and
-            Munir, Muhammad Akhtar and Khan, Fahad Shahbaz and Khan, Salman},
-  year   = {2026},
-  note   = {Technical report}
+@article{abouelhadid2026eojev,
+  title   = {{EO-Jev}: Decision Model for {Earth} Observation},
+  author  = {Abouelhadid, Mohamed Atef and Abuhani, Diaa Addeen and
+             Munir, Muhammad Akhtar and Khan, Fahad Shahbaz and Khan, Salman},
+  journal = {arXiv preprint arXiv:2611.03371},
+  year    = {2026}
 }
 ```
 
