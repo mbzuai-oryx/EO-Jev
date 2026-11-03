@@ -5,7 +5,7 @@ train mode.
 
 **Requests:**
 - **Text:** the 6,251 phase-0 Decision Index requests (raw/decision-index-work/parity-rows.jsonl), on which our
-  runtime matched the official d3-flash run (docs/results/phase0.md).
+  runtime matched the official d3-flash run.
 - **Images:** every dev row of the training families (trainset rows/final, split == dev). These are single- and two-image rows
   with choice and score questions of 2 to 102 options, i.e. the training distribution itself.
 

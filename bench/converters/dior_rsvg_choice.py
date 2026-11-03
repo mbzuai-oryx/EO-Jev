@@ -8,7 +8,7 @@ data_loader's order (sorted XML paths, one entry per object). Images: raw/dior-r
 the official zip, the rest from the HF torchgeo/dior re-host @ 6b3a7a1f, see the manifest §11).
 NOT used: raw/vhm-eval VG_DOIR_RSVG_test, which mixes train/val pairs into its 7,500 items (only 1,463 are test).
 
-Adapted (docs/06 §8: not comparable to Acc@0.5; we run RSThinker ourselves on this version):
+Adapted (not comparable to Acc@0.5; we run RSThinker ourselves on this version):
   - a seeded, class-stratified sample of 2,000 of the 7,500 pairs (proportional allocation per class, largest
     remainder; seed 0);
   - box choice: K = 4 lettered candidate boxes (A-D) drawn on the image in red / yellow / cyan / magenta with a black

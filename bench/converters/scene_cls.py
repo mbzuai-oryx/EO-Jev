@@ -1,4 +1,4 @@
-"""C6 scene-classification pack -> rows (docs/02 §4, docs/03 §6).
+"""C6 scene-classification pack -> rows.
 
 UCM and AID follow the GeoChat-Bench protocol (all 2,100 UCM images; the 3,000-image AID list) with its class
 names; WHU-RS19 (1,005) and SIRI-WHU (2,400) use every image; EuroSAT-RGB (5,400) and NWPU-RESISC45 (6,300) use

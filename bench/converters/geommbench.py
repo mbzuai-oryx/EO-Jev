@@ -5,7 +5,7 @@ Source: HF AR-X/GeoMMBench @ 298d660bbbb37fd528a0122af6375e4aa0d7bdd3 (no licenc
 question, A, B, C, D, answer (letter), index, image (PNG bytes, one image per question; many are charts or diagrams,
 and several questions share one image).
 
-Adapted (docs/06 §8: we run VHM-7B ourselves on this version):
+Adapted (we run VHM-7B ourselves on this version):
   - options SHUFFLED per item with `random.Random(row_id)` (row_id = "GeoMMBench:<split>:<index>"): in the published
     order always answering "B" scores 40.3% on test (A 253, B 409, C 230, D 124). Option texts are kept verbatim
     (none carries a letter prefix; texts like "Image A", "Method B" or "(a)" are content and stay); "None of the

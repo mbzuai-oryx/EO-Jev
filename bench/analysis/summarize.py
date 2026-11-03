@@ -1,4 +1,4 @@
-"""Build the result tables of the report from the run directories (docs/results/summary_tables.md).
+"""Build the result tables of the report from the run directories and print them (Markdown).
 
 Main table: d3-flash vs the same-backbone control (Qwen3.5-9B, identical prompt and readout) vs d3 without the image,
 per benchmark (question-weighted accuracy over a run's slices; ECE). Robustness and ablation tables are computed
@@ -21,7 +21,6 @@ from bench.common import CONVERTED, RUNS, read_jsonl
 from bench.metrics.score import ece, question_records
 
 A = CONVERTED / "ablations"
-OUT = Path(__file__).resolve().parents[2] / "docs" / "results" / "summary_tables.md"
 
 # label, run subdir, score file (by), rows file for raw recomputation
 MAIN = [
@@ -169,7 +168,6 @@ def main() -> None:
             a = acc_on(rr)[0]
             lines.append(f"| AID + NWPU (460 items): A5 {k} options vs full list (30 / 45) | {fmt(ref)} | {fmt(a)} | {(a - ref) * 100:+.1f} |")
 
-    OUT.write_text("\n".join(lines) + "\n")
     print("\n".join(lines))
 
 

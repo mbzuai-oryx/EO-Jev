@@ -1,7 +1,7 @@
 """Native-format variants: a specialist asked in its own training/eval format (its task tokens, label set, image
 layout), with its labels mapped back to our options so the result is scored on our rows like any other run.
 
-Used for in-domain models on our xBD rows (docs/04 §10, d3-ahead follow-up), via bench/runners/vlm.py --native:
+Used for in-domain models on our xBD rows, via bench/runners/vlm.py --native:
 - EarthDial (its released xBD test files, akshaydudhane/EarthDial-Dataset, Change_detection/xBD):
   disaster type = xBD_img_cls_testset_1 (our 933 test scenes, pre + post), damage = xBD_reg_cls_testset_1 (pre + post
   full tiles, the building as <box>[[x0, y0, x1, y1, 0]]</box> in percent of the image, x first; its eval appends

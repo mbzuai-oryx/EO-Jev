@@ -43,7 +43,7 @@ FILES = ["fam1_labels", "fam2_counting", "fam9_abstention", "fam4_damage", "repl
 OUT = TRAIN / "leaks"
 BL = TRAIN / "blocklist"
 # Folders under converted/ that are not evaluation data: probes/ holds the linear-probe experiment's training
-# images (docs/04 §8: e.g. AID's 7,000 non-test images and EuroSAT train), so matching them is not a leak.
+# images (e.g. AID's 7,000 non-test images and EuroSAT train), so matching them is not a leak.
 NON_EVAL_PREFIXES = ("probes/",)
 MAX_EVAL_IMAGES_PER_HASH = 20
 MAX_BUCKET = 5000

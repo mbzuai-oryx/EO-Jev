@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Phase-1 SOTA re-measurement (docs/05_specialist_models.md): which specialist runs on which rows file.
+# Phase-1 SOTA re-measurement: which specialist runs on which rows file.
 # Builds ONE slurm/run_vlm.sbatch job (3 GPUs) running the given models x modes one entry after another; each entry
 # uses its model's Python env (@env=...). One job because this account's GPU QoS allows 2 running jobs and the
 # user's other project holds one.

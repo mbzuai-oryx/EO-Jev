@@ -1,6 +1,6 @@
 """Shared paths, row I/O and image handling for the eo-jev harness.
 
-A row is one benchmark item: its images plus one or more typed questions about them (see docs/03_benchmark_plan.md §4.2).
+A row is one benchmark item: its images plus one or more typed questions about them.
 
     {"id", "group_id", "benchmark", "split", "task_family", "skills": [...],
      "images": [paths relative to $EOJEV_DATASETS/converted], "state": str | dict,
@@ -126,7 +126,7 @@ def store_image(data: bytes, dest_stem: Path) -> tuple[str, list[int]]:
 
 
 def transform_image(image: Image.Image, name: str | None) -> Image.Image:
-    """Robustness / ablation variants applied at run time (docs/03 §7, §8.2)."""
+    """Robustness / ablation variants applied at run time."""
     if not name or name == "none":
         return image
     if name in ("rot90", "rot180", "rot270"):

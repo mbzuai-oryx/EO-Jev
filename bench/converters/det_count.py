@@ -23,7 +23,7 @@ Sources:
   - DOTA-v2.0 val (academic, no redistribution): images = the 458 DOTA-v1.0 val PNGs in raw/dota-v2-val/
     dota-v1.0-val/part1.zip (user decision 2026-10-21: the 135 v2-only val images, Baidu-only, are not used); labels
     = official DOTA-v2.0_val.zip (OBB, "x1 y1 ... x4 y4 class difficult").
-Our version (adapted; docs/06 §8: we run RSThinker ourselves on it):
+Our version (adapted; we run RSThinker ourselves on it):
   - det_count_nwpu_vhr10.jsonl: every (positive image, present class) pair: 888 questions on 650 images, one row
     per image. 3 images above MAX_PIXELS are downscaled (Lanczos; factor in meta), the rest keep their JPEG bytes.
   - det_count_dota_v2_val.jsonl: tiles with a side < 256 px are dropped; of the 4,798 (tile, present class) pairs

@@ -1,4 +1,4 @@
-"""Build a d3-format package from plain Qwen/Qwen3.5-9B: the same-backbone control of docs/03 §5 and §8.4.
+"""Build a d3-format package from plain Qwen/Qwen3.5-9B: the same-backbone control.
 
 The package links the base checkpoint's files (weights, tokenizer, chat template and image processor, all
 byte-identical to d3-flash's except the weights) and adds:

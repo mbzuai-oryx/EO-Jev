@@ -1,4 +1,4 @@
-"""Model-independent prompts and answer parsing for the specialist models (docs/05_specialist_models.md).
+"""Model-independent prompts and answer parsing for the specialist models.
 
 Every specialist sees the same text for a question, built from our converted rows. The only differences between
 models are their chat templates, system prompts and answer tags, which live in the adapters:

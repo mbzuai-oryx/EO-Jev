@@ -8,7 +8,7 @@
 #SBATCH -t 12:00:00
 #SBATCH -o logs/%x-%j.out
 # A question-file converter (bench/converters/<name>.py) as a CPU job, so long conversions survive the login
-# session (docs/06; converter spec in $EOJEV_MODELS_ROOT/notes/converter_spec.md):
+# session:
 #   MODULE=bench.converters.rshr [ARGS="..."] sbatch slurm/convert_cpu.sbatch
 set -uo pipefail
 : "${MODULE:?set MODULE}"

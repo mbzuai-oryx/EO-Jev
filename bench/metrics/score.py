@@ -1,4 +1,4 @@
-"""Score one results file against its rows (docs/03 §7).
+"""Score one results file against its rows.
 
 choice: accuracy, macro-F1, balanced accuracy, top-3; noul: AUROC, accuracy@0.5, balanced accuracy;
 score: quadratic-weighted kappa (argmax level), MAE of the expected level, exact accuracy.

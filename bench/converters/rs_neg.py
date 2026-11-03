@@ -1,4 +1,4 @@
-"""C25 RS-Neg (negation understanding in RS MLLMs; arXiv 2606.20177, "ECCV'26" per docs/06) -> rows.
+"""C25 RS-Neg (negation understanding in RS MLLMs; arXiv 2606.20177, "ECCV'26") -> rows.
 AS-PUBLISHED full sets + an ADAPTED 5k checkpoint subset.
 
 Source: HF mumu-0011/RS-Neg @ 27053292a498fdebefd8f83aff52c23258371a8e (annotations only, Apache-2.0); evaluation

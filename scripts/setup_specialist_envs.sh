@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Python envs for specialists whose code needs older libraries (docs/05_specialist_models.md):
+# Python envs for specialists whose code needs older libraries:
 #   eo-sa2va     TerraScope, EarthMind (Sa2VA code: transformers 4.42.3)
 #   eo-earthdial EarthDial (InternVL2 / Phi-3 code pinned to transformers 4.37.2; its generation breaks on 4.42)
 #   eo-vhm       VHM-7B (LLaVA code: transformers 4.31.0, torch 2.0.1)

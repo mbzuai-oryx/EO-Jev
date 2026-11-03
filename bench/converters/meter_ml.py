@@ -6,7 +6,7 @@ RGB JPEGs). This is the official METER-ML v1.0 test split (Zenodo 6911013) minus
 samples: natural gas processing plants 107, wastewater treatment plants 106, landfills 95, oil refineries and
 petroleum terminals 94, concentrated animal feeding operations 92, coal mines 71.
 
-As published (docs/06 §8: cite RSCoVLM-7B 75.93 directly):
+As published (cite RSCoVLM-7B 75.93 directly):
   - all 565 items, the published JPEG bytes unchanged (all are within MIN_PIXELS..MAX_PIXELS, so no resize);
   - `instructions` is VHM's prompt verbatim ("Classify the image within one of the given classes:<6 names>.Answer
     with one word or short phrase."); every item has the same prompt;

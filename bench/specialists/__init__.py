@@ -1,4 +1,4 @@
-"""Open-weight EO specialist models for the SOTA re-measurement (docs/05_specialist_models.md).
+"""Open-weight EO specialist models for the SOTA re-measurement.
 
 Each entry names the adapter that loads it and the model's own prompt conventions, taken from the authors'
 inference code (third_party/<repo>):
@@ -54,7 +54,7 @@ SPECIALISTS: dict[str, dict] = {
     "vhm": dict(adapter="bench.specialists.vhm:VHM", repo="FitzPC/vhm_7B"),
     # TEOChat (eo-teochat env): Video-LLaVA-7B + LoRA on TEOChatlas (temporal pairs / sequences; trained on xBD train)
     "teochat": dict(adapter="bench.specialists.teochat:TEOChat", repo="jirvin16/TEOChat"),
-    # eval-v1.0 reference models (docs/06 §8), stock Qwen-VL fine-tunes with their base chat templates:
+    # eval-v1.0 reference models, stock Qwen-VL fine-tunes with their base chat templates:
     # UHR-BAT2 (Qwen3-VL-8B; its own eval scores option logits at <=1.31 MP) for RSHR-Bench (+ MME-RW-RS anchor),
     # RS-OPSD (Qwen3-VL-8B; weights in F32, loaded in bf16) for MME-RealWorld-RS,
     # Sky-VLM (Qwen2.5-VL-7B; official inference caps images at ~1.6 MP) for SpatialSky-Bench

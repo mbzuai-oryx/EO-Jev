@@ -10,7 +10,7 @@ GPUs that no longer initialize (docs: gpu-55, one GPU each on gpu-05 / gpu-52 on
         [--image-transform rot90|hflip|down2|...] [--blind] [--shuffle-images] [--permutation-average]
 
 --blind sends no image (language-prior control); --shuffle-images pairs every row with another row's images
-(fixed seed), the shuffled-image control of docs/03 §9. A crashed run is resumed by clearing locks that have
+(fixed seed), the shuffled-image control. A crashed run is resumed by clearing locks that have
 no .done marker (slurm/run_d3.sbatch does this before starting) and running again.
 """
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SOTA re-measurement (docs/05_specialist_models.md): open-weight EO specialist checkpoints -> $HF_HUB_CACHE (on /l),
+# SOTA re-measurement: open-weight EO specialist checkpoints -> $HF_HUB_CACHE (on /l),
 # authors' inference code -> $EOJEV_MODELS_ROOT/third_party/<name> (untrusted code: never run from inside that tree
 # except through the model loaders that need it).
 set -euo pipefail

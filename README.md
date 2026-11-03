@@ -69,7 +69,7 @@ example player and a one-minute demo video.
 | `trainset/` | Training rows from the benchmarks' training splits, leak checks and general-data replay |
 | `train/` | LoRA training (`train.py`), adapter merging and export |
 | `scripts/`, `slurm/` | Downloads, environment setup, job submission, scoring |
-| `docs/` | Literature review, benchmark catalogue, plan and benchmark reports; the paper's figures in `docs/figures/` |
+| `docs/figures/` | The paper's figures used in this README |
 
 Data, model weights, run outputs and logs are not in the repository. They live in folders you choose in `env.local.sh`.
 

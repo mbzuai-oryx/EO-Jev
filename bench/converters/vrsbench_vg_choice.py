@@ -5,7 +5,7 @@ Source: VRSBench (NeurIPS'24 D&B; HF xiang709/VRSBench, local raw/vrsbench): `VR
 0-100 plus the oriented `obj_corner` in 0-1), `Annotations_val.zip` (per-image JSON with every described object of
 that image) and `Images_val.zip` (512 x 512 PNGs, DOTA-v2 / DIOR crops).
 
-Adapted (docs/06 §8: not comparable to Acc@0.5; we run RSThinker ourselves on this version):
+Adapted (not comparable to Acc@0.5; we run RSThinker ourselves on this version):
   - a seeded sample of 2,000: 1,000 unique + 1,000 non-unique items (meta.is_unique), each half stratified by
     object class (proportional, largest remainder; seed 0);
   - gold box = the extent of `obj_corner` clipped to the image (pixel-exact; the published 0-100 `ground_truth`,

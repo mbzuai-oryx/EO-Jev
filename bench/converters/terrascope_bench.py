@@ -8,7 +8,7 @@ comparative_ranking 855 (2), coverage_percentage 855 (4), absolute_area 855 (4),
 The paper's sixth task, Building Change Estimation (288 multi-temporal items; 3,837 in the paper), is not in the
 HF release, so the paper's "overall" (macro over six tasks) cannot be reproduced: cite per task and the 5-task mean.
 
-As published (docs/06 §8: cite TerraScope 72.2 (5-task) / EarthMind-4B 46.4 directly):
+As published (cite TerraScope 72.2 (5-task) / EarthMind-4B 46.4 directly):
   - all 3,549 items in parquet order; images are the published PNG bytes (256 x 256 = 65,536 px = MIN_PIXELS, so
     none is resized), stored once per published file name;
   - `instructions` = the published question verbatim; one `choice` over the candidate texts in published key order

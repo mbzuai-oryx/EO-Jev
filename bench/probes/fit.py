@@ -1,4 +1,4 @@
-"""Fit linear probes on extracted features and compare with zero-shot readout accuracy (docs/03 §8.3).
+"""Fit linear probes on extracted features and compare with zero-shot readout accuracy.
 
 For each feature set (decision-state hidden, pooled vision), a multinomial logistic regression on standardized
 features is fit on the train split (C chosen on a 10% held-out slice of train) and scored on the test split.

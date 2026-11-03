@@ -1,4 +1,4 @@
-"""Specialist results per website table row (docs/05_specialist_models.md): for every row of the benchmark-guide
+"""Specialist results per website table row: for every row of the benchmark-guide
 tables, each assigned specialist's score in both answer modes, from runs/specialists/<model>/<mode>/<rows>/score_*.json
 (scripts/score_specialists.sh). Exact-set match for multi-select items is computed from the raw results, as for d3.
 

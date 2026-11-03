@@ -1,4 +1,4 @@
-"""Derive robustness / ablation row files from a converted benchmark (docs/03 §7, §8.2).
+"""Derive robustness / ablation row files from a converted benchmark.
 
     python -m bench.variants sample  IN OUT --n 1500 [--by task_family]   # stratified, seeded subset
     python -m bench.variants permute IN OUT --k 3                         # k seeded option orders per row (flip rate)

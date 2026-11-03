@@ -1,4 +1,4 @@
-"""Probe rows for diagnostic D1 (docs/04 §8, "not yet probed"): can a linear readout find count, change-amount and
+"""Probe rows for diagnostic D1: can a linear readout find count, change-amount and
 damage information in d3's decision state and in the vision features, where the zero-shot answers are weak?
 
 - **d1_count_dior:**

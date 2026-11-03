@@ -1,4 +1,4 @@
-"""Train/test row sets for the representation-vs-readout probes (docs/03 §8.3).
+"""Train/test row sets for the representation-vs-readout probes.
 
   AID      all 10,000 images; test = the GeoChat 3,000-image list (the zero-shot eval set), train = the rest
   EuroSAT  train: seeded 5,000 of the official train split; test: the official 5,400

@@ -5,7 +5,7 @@ For every question we compare the full option-probability vectors.
 
     python bench/parity_compare.py <official results.jsonl.gz> <our results.jsonl> <out.json>
 
-Pass criteria (docs/03_benchmark_plan.md, Phase 0): argmax agreement >= 99.5% and median max|dp| <= 0.005.
+Pass criteria (phase 0): argmax agreement >= 99.5% and median max|dp| <= 0.005.
 """
 
 from __future__ import annotations
